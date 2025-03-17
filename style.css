@@ -1,44 +1,56 @@
-.container {
-    width: 50%;
-    height: 200px;
-    overflow: auto;
-    margin-left: 0 auto;
-}
-
-.static {
-    position: static;
-    border: 2px solid green;
-}
-
-.relative {
-    position: relative;
-    border: 2px solid red;
-    left: 20px;
-    /*jarak dari posisi paling kiri sebesar 20px */
-    bottom: 0;
-    /*jarak dari posisi paling bawah sebesar 0px */
-
-}
-
-.absolute {
-    position: absolute;
-    border: 2px solid blue;
-    left: 20px;
-    bottom: 40px;
-}
-
-.fixed {
-    position: fixed;
-    border: 2px solid black;
-    bottom: 0;
-    right: 0;
-}
-
-.stiky {
+.menu {
+    margin: 0;
+    width: 100%;
     position: sticky;
-    border: 2px solid yellow;
-    top: 0;
-    left: 20px;
-    background: darkblue;
+}
+
+nav {
+    width: 20%;
+    height: 400px;
+    background: #e2e0e0;
+}
+
+ul.horizontal {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: #d10202;
+}
+
+ul.horizontal li {
+    float: left;
+}
+
+ul.horizontal li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+ul.horizontal li a:hover {
+    background-color: #6b0101;
+}
+
+ul.vertical {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: #e2e0e0;
+}
+
+ul.vertical li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    text-align: left;
+}
+
+ul.vertical li a:hover {
+    background-color: #777777;
     color: white;
 }
